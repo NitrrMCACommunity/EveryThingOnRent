@@ -1,0 +1,102 @@
+. {
+	margin: 0;
+	padding:0;
+	font-family: tahma, sans-serif;
+	box-sizing: border-box;
+}
+body {
+	background:white;
+}
+
+.chating{
+	width: 300px;
+	min-width: 390px;
+	height: 600px;
+	 background-image: url("image/ccc.jpg");
+	padding: 25px;
+	margin: -110px 300px auto;
+	box-shadow: 0 3px #ccc;
+}
+
+.chatlog{
+	padding: 10px;
+	width: 100%;
+	height: 450px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.chatlog : :-webkit-scrollbar {
+	width:5px;
+}
+
+.chatlog : :-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background: rgba(0,0,0,.1);
+}
+
+.chatting{
+	display: flex;
+	flex-flow: row wrap;
+	align-item: flex-start;
+	margin-bottom: 10px;
+}
+
+.chatting .user-photo{
+	width: 50px;
+	height: 50px;
+	background: #ccc;
+	border-radius: 40%;
+	overflow: hidden;
+}
+
+.chatting .user-photo img{
+	width: 100%;
+}
+
+
+.chatting  .chat-message{
+	width: 60%;
+	padding: 7px;
+	margin: 5px 10px 0;
+	border-radius: 10px;
+	color: black;
+	font-size: 18px;
+	
+}
+
+
+.friend .chat-message{
+	background: #98FB98;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

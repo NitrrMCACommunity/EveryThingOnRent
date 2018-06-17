@@ -1,0 +1,655 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Aavartan NIT Raipur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+<!-- start menu -->     
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!-- end menu -->
+<!-- top scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="header-top">
+	 <div class="wrap"> 
+		<div class="logo">
+			<a href="index.html"><img src="images/rent.jpg" alt=""/>
+	    </div>
+	    <div class="cssmenu">
+		   <ul>
+			 <li class="active"><a href="register.html">Register</a></li> 
+			 <li><a href="login.html">Login</a></li> 
+			  <li><a href="#">Search</a></li> 
+		
+		   </ul>
+		</div>
+		<ul class="icon2 sub-icon2 profile_img">
+			<li><a class="active-icon c2" href="#"> </a>
+				<ul class="sub-icon2 list">
+					<li><h3>Products</h3><a href=""></a></li>
+					<li><p>Product will be Displayed in Short distance, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clear"></div>
+ 	</div>
+   </div>
+   <div class="header-bottom">
+   	<div class="wrap">
+   		<!-- start header menu -->
+		<ul class="megamenu skyblue">
+		    <li><a class="color1" href="index.html">Home</a></li>
+			<li class="grid"><a class="color2" href="#">Books</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Engneering</h4>
+								<ul>
+									<li><a href="Search?key=mechanical">Machanical</a></li>
+									<li><a href="Search?key=civil">Civil</a></li>
+									<li><a href="Search?key=chemical">Chemical</a></li>
+									<li><a href="Search?key=electronix">Electronix</a></li>
+									<li><a href="Search?key=computer science">Computer Science</a></li>
+	
+								</ul>	
+							</div>
+							<div class="h_nav">
+								<h4 class="top">Medical</h4>
+								<ul>
+									<li><a href="Search?key=mbbs">MBBS</a></li>
+									<li><a href="Search?key=bds">BDS</a></li>
+									<li><a href="Search?key=b pharma">B Pharma</a></li>
+									<li><a href="Search?key=m pharma">M Pharma</a></li>
+								
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Management</h4>
+								<ul>
+									<li><a href="Search?key=human resource">Human Resource</a></li>
+									<li><a href="Search?key=facility management">Facility Management</a></li>
+									<li><a href="Search?key=operation management">Operation Management</a></li>
+									<li><a href="Search?key=system management">System Management</a></li>
+									<li><a href="Search?key=financial management">Financial Management</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Novels</h4>
+								<ul>
+									<li><a href="Search?key=human resource">Human Resource</a></li>
+									<li><a href="Search?key=Facility Management">Facility Management</a></li>
+									<li><a href="Search?key=Operation Management">Operation Management</a></li>
+									<li><a href="Search?key=System Management">System Management</a></li>
+									<li><a href="Search?key=System Management">Financial Management</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<img src="images/books.jpg" alt=""/>
+					</div>
+				</div>
+				</li>
+  			   <li class="active grid"><a class="color4" href="#">Vehicles</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Cycle</h4>
+								<ul>
+									<li><a href="Search?key=Mountain Cycle">Mountain Cycle</a></li>
+									<li><a href="Search?key=Racing Cycle">Racing Cycle</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Two Wheeler</h4>
+								<ul>
+									<li><a href="Search?key=Scooty">Scooty</a></li>
+									<li><a href="Search?key=Bike">Bike</a></li>
+								</ul>	
+							</div>							
+						</div>
+							<div class="col1">
+							<div class="h_nav">
+								<h4>Four Wheeler</h4>
+								<ul>
+									<li><a href="Search?key=Car">Car</a></li>
+									<li><a href="Search?key=Transport Vehicles">Transport Vehicles</a></li>
+								</ul>	
+							</div>							
+						</div>
+						
+						<div class="col1">
+						 <div class="h_nav">
+						   <img src="images/cycle.png" alt=""/>
+						 </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+					</div>
+    			</li>				
+				<li><a class="color5" href="#">Real States</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Flats</h4>
+								<ul>
+									<li><a href="Search?key=1 bhk flat">1 BHK Flat</a></li>
+									<li><a href="Search?key=2 bhk flat">2 BHK Flat</a></li>
+									<li><a href="Search?key=3 bhk flat">3 BHK Flat</a></li>
+								</ul>	
+							</div>
+							<div class="h_nav">
+								<h4 class="top">Rooms</h4>
+								<ul>
+									<li><a href="Search?key=single room">Single Room</a></li>
+									<li><a href="Search?key=double room">Double Room</a></li>
+									<li><a href="Search?key=family room">Family  Room</a></li>
+								</ul>	
+							</div>
+						</div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<img src="images/house.jpg" alt=""/>
+					</div>
+				</div>
+				</li>
+				<li><a class="color7" href="#">Party Wears</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Man</h4>
+								<ul>
+									<li><a href="Search?key=kurta pyjama">Kurta Pyjama</a></li>
+									<li><a href="Search?key=sherwani">Sherwani</a></li>
+									<li><a href="Search?key=mens grooming">Mens Grooming</a></li>
+									<li><a href="Search?key=party suits">Party suits</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Woman</h4>
+								<ul>
+									<li><a href="Search?key=ethnic wear">Ethnic Wear</a></li>
+									<li><a href="Search?key=beauty grooming">Beauty & Grooming</a></li>
+									<li><a href="Search?key=jewellery">Jewellery</a></li>
+									<li><a href="Search?key=International Brand">International Brand</a></li>
+									<li><a href="Search?key=Accessories">Accessories</a></li>
+								</ul>	
+							</div>							
+						</div>
+						
+					
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<img src="images/dress.jpg" alt=""/>
+					</div>
+    				</div>
+				</li>
+				
+				<li><a class="color7" href="#">Electronics</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Fan</h4>
+								<ul>
+									<li><a href="Search?key=Stand Fan">Stand Fan</a></li>
+									<li><a href="Search?key=Table Fan">Table Fan</a></li>
+									<li><a href="Search?key=Fan in Bulk">Fan in Bulks for Function</a></li>
+									<li><a href="Search?key=coolers">Coolers</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4> Hardware</h4>
+								<ul>
+									<li><a href="Search?key=Printer">Printer</a></li>
+									<li><a href="Search?key=Scanner">Scanner</a></li>
+									<li><a href="Search?key=Ploatter">Ploatter</a></li>
+									<li><a href="Search?key=Computer Hardware">Others</a></li>
+								
+								</ul>	
+							</div>							
+						</div>
+							<div class="col1">
+							<div class="h_nav">
+								<h4>Others</h4>
+								<ul>
+									<li><a href="Search?key=Camera">Digital Cameras</a></li>
+									<li><a href="Search?key=Electronic Function">Electronic Product for Function</a></li>
+								
+								</ul>	
+							</div>							
+						</div>
+					
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<img src="images/dress.jpg" alt=""/>
+					</div>
+    				</div>
+				</li>
+				
+				
+				
+				
+				
+				<li><a class="color6" href="aboutus.html">About Us</a>
+				<div class="megapanel">
+					
+							<div class="h_nav">
+									
+											
+						<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+				</div>
+				</li>
+				<li><a class="color8" href="#">Contact Us</a>
+				<div class="megapanel">
+							<div class="h_nav">
+								<h2>For any technical queries, Contact Helpdesk No's: +91-8407095037, 
+								+91-9634064603, +91-7352286834 (from 10:30AM to 5:00PM Monday to Saturday working days only) 
+								E-mail: afsaredrisy@gmail.com,basantkumar562@gmail.com</h3>
+								</div>							
+						</div>
+						</div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+				</div>
+				</li>
+						<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+				
+		   </ul>
+		   <div class="clear"></div>
+     	</div>
+       </div>
+       <div class="register_account">
+          	<div class="wrap">
+    	      <h4 class="title"><b>Add an Item</b></h4>
+    		   <form action="AddItems" method="post">
+    			 <div class="col_1_of_2 span_1_of_2">
+
+		   			 <div>
+					 <b>Item Name:</b>
+					 <input type="text" name="i_name" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'itemname';}"></div>
+		    			
+						
+							<div>
+					<b>Item Category:</b>
+					<select id="state" name="state" onchange="change_state(this.value)" class="frm-field required">
+		                      <option value="">Select Item Category</option> 
+					      <option value="books">Books</option> 
+						     <option value="vehicles">Vehicles</option> 
+							    <option value="real state">Real States</option> 
+								   <option value="party wears">Party Wears</option> 
+                                       <option value="others">Others</option> 								     
+										    
+																							  
+		          </select>
+				  </div>	
+				 
+						
+						
+						
+						
+						
+						
+					  <b>Item Description:</b>		        
+		          <div><input type="text"name="dec" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'itemdescription';}"></div>
+		           
+				     <b>Rent/Month:</b>				  
+		    		<div><input type="text"name="rent" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'month';}"></div>
+            
+					 
+					 </div>
+				 
+		    	  <div class="col_1_of_2 span_1_of_2">
+                  
+			       	
+				  <b>Address:</b>
+					  <div><input type="text"name="addr" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'fulladdress';}"></div>
+		    			  
+				
+                 	<div>
+					<b>Select States</b>
+					<select id="state" name="state" onchange="change_state(this.value)" class="frm-field required">
+		                      <option value="">select state</option> 
+					      <option value="AP">Andhra Pradesh</option> 
+						     <option value="AR">Arunachal pradesh</option> 
+							    <option value="AS">Assam</option> 
+								   <option value="BH">Bihar</option> 
+								      <option value="CH">Chandigarh</option> 
+									     <option value="CG">Chhatisgarh</option> 
+										    <option value="DL">Delhi</option>   
+											   <option value="GO">Goa</option> 
+											      <option value="GU">Gujarat</option> 
+												     <option value="HR">Haryana</option> 
+						                                 <option value="HP">Himachal Pradesh</option> 
+														    <option value="JK">Jammu & Kashmir</option> 
+															   <option value="JH">Jharkhand</option> 
+															      <option value="KR">Karnataka</option> 
+																     <option value="KL">Kerala</option> 
+																	    <option value="MP">Madhya Pardesh</option> 
+																		   <option value="MH">Maharashtra</option> 
+																		   <option value="OR">Orissa</option> 
+                                                                               <option value="PJ">Punjab</option> 
+                                                                                <option value="RJ">Rajasthan</option> 
+																				   <option value="TN">Tamil Nadu</option> 
+																				      <option value="TR">Tripura</option> 
+																					     <option value="UP">Uttar Pardesh</option> 
+																						    <option value="UT">Uttaranchal</option>   
+																							   <option value="WB">West Bengal</option> 
+																							  
+		          </select>
+				  </div>	
+				  
+				  
+                    <b>Item City:</b>
+					  <div><input type="text"name="city" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'itemcity';}"></div>
+					 			<br/>
+  				  <b>Upload Image:</b>
+		    		<div><input type="file"name="file" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'month';}"></div>
+            								
+					 
+		          </div>
+				  
+				 
+		         <button class="grey">Submit</button>
+				 
+		         <div class="clear"></div>
+		    </form>
+    	  </div> 
+        </div>
+             <div class="footer">
+       	  <div class="footer-top">
+       		<div class="wrap">
+       			  
+				   <div class="col_1_of_footer-top span_1_of_footer-top">
+				  	<ul class="f_list">
+				  	 	<li><img src="images/f_icon1.png" alt=""/><span class="delivery">Customer Service :<span class="orange">(+91) 7352286834 (freephone)</span></span></li>
+				  	 </ul>
+				   </div>
+				  
+				  <div class="clear"></div>
+			 </div>
+       	 </div>
+       	 <div class="footer-middle">
+       	 	<div class="wrap">
+       	 		<div class="section group">
+				<div class="col_1_of_middle span_1_of_middle">
+					<dl id="sample" class="dropdown">
+			        <dt><a href="#"><span>Please Select a States</span></a></dt>
+			        <dd>
+			            <ul>
+			                <li><a href="#">Andaman & Nicobar <span class="value">AN</span></a></li>
+			                <li><a href="#">Andhra Pradesh <span class="value">AP</span></a></li>
+			                <li><a href="#">Arunachal Pradesh <span class="value">AR</span></a></li>
+			                <li><a href="#">Assam <span class="value">AS</span></a></li>
+			                <li><a href="#">Bihar <span class="value">BH</span></a></li>
+			                <li><a href="#">Chandigarh <span class="value">CH</span></a></li>
+							 <li><a href="#">Chhatisgarh<span class="value">CG</span></a></li>
+			                <li><a href="#">Delhi <span class="value">DL</span></a></li>
+			                <li><a href="#">Goa <span class="value">GO</span></a></li>
+			                <li><a href="#">Gujarat <span class="value">GU</span></a></li>
+			                <li><a href="#">Haryana<span class="value">HR</span></a></li>
+			                <li><a href="#">Himachal Pradesh<span class="value">HP</span></a></li>
+							 <li><a href="#">Jammu & Kashmir <span class="value">JK</span></a></li>
+			                <li><a href="#">Jharkhand<span class="value">JH</span></a></li>
+			                <li><a href="#">Karnataka <span class="value">KR</span></a></li>
+                           <li><a href="#">Kerala<span class="value">KL</span></a></li>			               
+						   <li><a href="#">Madhya Pardesh<span class="value">MP</span></a></li>
+						             <li><a href="#">Maharashtra <span class="value">MH</span></a></li>
+							<li><a href="#">Orissa<span class="value">OR</span></a></li>
+			                <li><a href="#">Punjab<span class="value">PJ</span></a></li>
+							          <li><a href="#">Rajashtan <span class="value">RJ</span></a></li>
+									            <li><a href="#">Tamil Nadu <span class="value">TL</span></a></li>
+												          <li><a href="#">Tripura<span class="value">TR</span></a></li>
+			                <li><a href="#">Uttar Pradesh<span class="value">UP</span></a></li>
+							    <li><a href="#">Uttaranchal <span class="value">UT</span></a></li>
+			                <li><a href="#">West Bangal<span class="value">WB</span></a></li>
+			               
+			            </ul>
+			         </dd>
+   				    </dl>
+   				 </div>
+				<div class="col_1_of_middle span_1_of_middle">
+					<ul class="f_list1">
+						<li><span class="m_8">Search Item</span>
+						<div class="search">	  
+							<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+							<input type="submit" value="Subscribe" id="submit" name="submit">
+							<div id="response"> </div>
+			 			</div><div class="clear"></div>
+			 		    </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			   </div>
+       	 	</div>
+       	 </div>
+       	 <div class="footer-bottom">
+       	 	<div class="wrap">
+       	 		<div class="section group">
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Books</h3>
+					<ul class="sub_list">
+						<h4 class="m_10">Engneering</h4>
+					    <li><a href="Search?key=">Mechanical</a></li>
+			            <li><a href="Search?key=">Civil</a></li>
+			            <li><a href="Search?key=">Chemical</a></li>
+			           <li><a href="Search?key=">Electronix</a></li>
+   					 <li><a href="Search?key=">Computer Science</a></li>
+					 </ul>
+			             <ul class="sub_list">
+				            <h4 class="m_10">Medical</h4>
+				            <li><a href="Search?key=">MBBS</a></li>
+				            <li><a href="Search?key=">BDS</a></li>
+				            <li><a href="Search?key=">B Pharma</a></li>
+				         </ul>
+				         <ul class="sub_list">
+				            <h4 class="m_10">Management</h4>
+				            <li><a href="Search?key=">Human Resource </a></li>
+				            <li><a href="Search?key=">Facility Managment</a></li>
+				            <li><a href="Search?key=">Operation Manegement</a></li>
+							 <li><a href="Search?key=">System Management</a></li>
+							  <li><a href="Search?key=">Financial Management </a></li>
+				         </ul>
+				        <ul class="sub_list">
+				            <h4 class="m_10">Novels</h4>
+				            <li><a href="Search?key=">Romance novel</a></li>
+				            <li><a href="Search?key=">War novel</a></li>
+				            <li><a href="Search?key=">Biographical novel</a></li>
+							 <li><a href="Search?key=">Social novel</a></li>
+							  <li><a href="Search?key=">Epistolary novel</a></li>
+				        </ul>
+				        
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Vehicles</h3>
+					<ul class="sub_list">
+					    <li><a href="Search?key=">Cycle</a></li>
+			            <li><a href="Search?key=">Bike</a></li>
+			            <li><a href="Search?key=">Car</a></li>
+			  
+			         </ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Real States</h3>
+					<ul class="list1">
+					     <li><a href="Search?key=">1 BHK Flat</a></li>
+			            <li><a href="Search?key=">2 BHK Flat</a></li>
+			            <li><a href="Search?key=">3 BHK Flat</a></li>
+			            <li><a href="Search?key=">Single Room</a></li>
+			            <li><a href="Search?key=">Double Room</a></li>
+			            <li><a href="Search?key=">Family Room</a></li>
+			            <li><a href="Search?key=">Campus</a></li>
+		            </ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Dress</h3>
+					<ul class="list1">
+					    <li><a href="Search?key=">Shirts</a></li>
+					    <li><a href="Search?key=">Pants & Tights</a></li>
+					    <li><a href="Search?key=">Shirts</a></li>
+					    <li><a href="Search?key=">Jerseys</a></li>
+					    <li><a href="Search?key=">Hoodies & Track Tops</a></li>
+					    <li><a href="Search?key=">Bags</a></li>
+					    <li><a href="Search?key=">Jackets</a></li>
+					    <li><a href="Search?key=">Hi Tops</a></li>
+					    <li><a href="Search?key=">SweatShirts</a></li>
+					    <li><a href="Search?key=">Socks</a></li>
+					    <li><a href="Search?key=">Swimwear</a></li>
+					    <li><a href="Search?key=">Tracksuits</a></li>
+					    <li><a href="Search?key=">Hats</a></li>
+					    <li><a href="Search?key=">Football Boots</a></li>
+					    <li><a href="Search?key=">Other Accessories</a></li>
+					    <li><a href="Search?key=">Sandals & Flip Flops</a></li>
+					    <li><a href="Search?key=">Skirts & Dresseses</a></li>
+					    <li><a href="Search?key=">Balls</a></li>
+					    <li><a href="Search?key=">Watches</a></li>
+					    <li><a href="Search?key=">Fitness Equipment</a></li>
+					    <li><a href="Search?key=">Eyewear</a></li>
+					    <li><a href="Search?key=">Gloves</a></li>
+					    <li><a href="Search?key=">Sports Bras</a></li>
+		            </ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Support</h3>
+					<ul class="list1">
+					   <li><a href="Search?key=">Customer Service</a></li>
+					   <li><a href="Search?key=">FAQ</a></li>
+					   <li><a href="Search?key=">Online Rental Showrooms Contact</a></li>
+					   <li><a href="Search?key=">about  Products</a></li>
+					   <li><a href="Search?key=">Ordering </a></li>
+					   <li><a href="Search?key=">Complains</a></li>
+					   <li><a href="Search?key=">Using out Site</a></li>
+					   <li><a href="Search?key=">Delivery Terms</a></li>
+					   <li><a href="Search?key=">Site Map</a></li>
+					   <li><a href="Search?key=">Gift Card</a></li>
+					  
+		            </ul>
+		            <ul class="sub_list2">
+		               <h4 class="m_10">Company Info</h4>
+			           <li><a href="Search?key=">About Us</a></li>
+			
+			        </ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+       	 	</div>
+       	 </div>
+       	 <div class="copy">
+       	   <div class="wrap">
+       	   	  <p>© All rights reserved | Aavartan&nbsp;<a href="http://nitrr.com/"> NIT Raipur</a></p>
+       	   </div>
+       	 </div>
+       </div>
+       <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+        <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>

@@ -1,0 +1,913 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Aavartan NIT Raipur</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:Rs400' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+<!-- start menu -->     
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
+<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<!-- end menu -->
+<!-- top scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+  <div class="header-top">
+	 <div class="wrap"> 
+		<div class="logo">
+			<a href="index.html"><img src="images/rent.jpg" alt=""/>
+	    </div>
+	    <div class="cssmenu">
+		   <ul>
+			 <li class="active"><a href="register.html">Register</a></li> 
+			 <li><a href="Additem.html">Add-product</a></li> 
+			 <li><a href="login.html">Login</a></li> 
+			 <li><a href="Search.html">Search</a></li>
+			
+		   </ul>
+		</div>
+		<ul class="icon2 sub-icon2 profile_img">
+			<li><a class="active-icon c2" href="#"> </a>
+				<ul class="sub-icon2 list">
+					<li><h3>Everything On Rent</h3><a href="Add"></a></li>
+					<li><p>...............</p></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="clear"></div>
+ 	</div>
+   </div>
+   <div class="header-bottom">
+   	<div class="wrap">
+   		<!-- start header menu -->
+		<ul class="megamenu skyblue">
+		    <li><a class="color1" href="Home">Home</a></li>
+			<li class="grid"><a class="color2" href="#">Books</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Engneering</h4>
+								<ul>
+									<li><a href="shop.html">Machanical</a></li>
+									<li><a href="shop.html">Civil</a></li>
+									<li><a href="shop.html">Chemical</a></li>
+									<li><a href="shop.html">Electronix</a></li>
+									<li><a href="shop.html">Computer Science</a></li>
+	
+								</ul>	
+							</div>
+							<div class="h_nav">
+								<h4 class="top">Medical</h4>
+								<ul>
+									<li><a href="shop.html">mbbs</a></li>
+									<li><a href="shop.html">bds</a></li>
+									<li><a href="shop.html">b pharma</a></li>
+									<li><a href="shop.html">m pharma</a></li>
+								
+								</ul>	
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Management</h4>
+								<ul>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<img src="images/pic.jpg" alt=""/>
+					</div>
+				</div>
+				</li>
+  			    <li class="active grid"><a class="color4" href="#">Vehicles</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Cycle</h4>
+								<ul>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Bike</h4>
+								<ul>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+								</ul>	
+							</div>							
+						</div>
+							<div class="col1">
+							<div class="h_nav">
+								<h4>Car</h4>
+								<ul>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+									<li><a href="shop.html"></a></li>
+								</ul>	
+							</div>							
+						</div>
+						
+						<div class="col1">
+						 <div class="h_nav">
+						   <img src="images/cycle.png" alt=""/>
+						 </div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+					</div>
+    			</li>				
+				<li><a class="color5" href="#">Real States</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Flats</h4>
+								<ul>
+									<li><a href="shop.html">1 BHK Flat</a></li>
+									<li><a href="shop.html">2 BHK Flat</a></li>
+									<li><a href="shop.html">3 BHK Flat</a></li>
+								</ul>	
+							</div>
+							<div class="h_nav">
+								<h4 class="top">Rooms</h4>
+								<ul>
+									<li><a href="shop.html">Single Room</a></li>
+									<li><a href="shop.html">Double Room</a></li>
+									<li><a href="shop.html">Family  Room</a></li>
+								</ul>	
+							</div>
+						</div>
+					
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+							<img src="images/house.jpg" alt=""/>
+					</div>
+				</div>
+				</li>
+				
+				<li><a class="color7" href="#">Party Wears</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Man</h4>
+								<ul>
+									<li><a href="shop.html">Kurta Pyjama</a></li>
+									<li><a href="shop.html">Sherwani</a></li>
+									<li><a href="shop.html">Mens Grooming</a></li>
+									<li><a href="shop.html">Party suits</a></li>
+								</ul>	
+							</div>							
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Woman</h4>
+								<ul>
+									<li><a href="shop.html">Ethnic Wear</a></li>
+									<li><a href="shop.html">Smart Watches</a></li>
+									<li><a href="shop.html">Beauty & Grooming</a></li>
+									<li><a href="shop.html">Jewellery</a></li>
+									<li><a href="shop.html">International Brand</a></li>
+									<li><a href="shop.html">Accessories</a></li>
+								</ul>	
+							</div>							
+						</div>
+						
+					
+					<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<img src="images/dress.jpg" alt=""/>
+					</div>
+    				</div>
+				</li>
+				
+		<li><a class="color6" href="about.jsp">About Us</a>
+				<div class="megapanel">
+					
+							<div class="h_nav">
+								
+							
+											
+						<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+				</div>
+				</li>
+				
+				<li><a class="color8" href="#">Contact</a>
+				<div class="megapanel">
+							<div class="h_nav">
+							<ul>
+									<li><a href="Csend">Send E-mail</a></li>
+									<li><a href="help.html">Customer Help&Support</a></li>
+									
+								</ul>	
+								
+								</div>							
+						</div>
+						</div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+				</div>
+				</li>
+						<div class="row">
+						<div class="col2"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+						<div class="col1"></div>
+					</div>
+    				</div>
+				</li>
+				
+		   </ul>
+		   <div class="clear"></div>
+     	</div>
+       </div>
+       <div class="index-banner">
+       	  <div class="wmuSlider example1" style="height: 560px;">
+			  <div class="wmuSliderWrapper">
+				  <article style="position: relative; width: 100%; opacity: 1;"> 
+				   	<div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner1.jpg" alt=""/> 
+						</div>
+						 <div class="slider-right">
+						    <h1>Product</h1>
+						    <h2>Advertisement</h2>
+						    <p>Product Description</p>
+						    <div class="btn"><a href="shop.html">Order</a></div>
+						 </div>
+						 <div class="clear"></div>
+					 </div>
+					</article>
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	 <div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner2.jpg" alt=""/> 
+						</div>
+						 <div class="slider-right">
+						    <h1>Product</h1>
+						    <h2>Advertisement</h2>
+						    <p>Product Description</p>
+						    <div class="btn"><a href="shop.html">Order</a></div>
+						 </div>
+						 <div class="clear"></div>
+					 </div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	<div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner1.jpg" alt=""/> 
+						</div>
+						 <div class="slider-right">
+						    <h1>Product</h1>
+						    <h2>Advertisement</h2>
+						    <p>Product Description</p>
+						    <div class="btn"><a href="shop.html">Order</a></div>
+						 </div>
+						 <div class="clear"></div>
+					 </div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;">
+				   	<div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner2.jpg" alt=""/> 
+						</div>
+						 <div class="slider-right">
+						    <h1>Product</h1>
+						    <h2>Advertisement</h2>
+						    <p>Product</p>
+						    <div class="btn"><a href="shop.html">Order</a></div>
+						 </div>
+						 <div class="clear"></div>
+					 </div>
+				   </article>
+				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   	 <div class="banner-wrap">
+					   	<div class="slider-left">
+							<img src="images/banner1.jpg" alt=""/> 
+						</div>
+						 <div class="slider-right">
+						    <h1>Product</h1>
+						    <h2>Advertisement</h2>
+						    <p>Product</p>
+						    <div class="btn"><a href="shop.html">Order</a></div>
+						 </div>
+						 <div class="clear"></div>
+					 </div>
+			      </article>
+				</div>
+                <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a>
+                <ul class="wmuSliderPagination">
+                	<li><a href="#" class="">0</a></li>
+                	<li><a href="#" class="">1</a></li>
+                	<li><a href="#" class="wmuActive">2</a></li>
+                	<li><a href="#">3</a></li>
+                	<li><a href="#">4</a></li>
+                  </ul>
+                 <a class="wmuSliderPrev">Previous</a><a class="wmuSliderNext">Next</a><ul class="wmuSliderPagination"><li><a href="#" class="wmuActive">0</a></li><li><a href="#" class="">1</a></li><li><a href="#" class="">2</a></li><li><a href="#" class="">3</a></li><li><a href="#" class="">4</a></li></ul></div>
+            	 <script src="js/jquery.wmuSlider.js"></script> 
+				 <script type="text/javascript" src="js/modernizr.custom.min.js"></script> 
+						<script>
+       						 $('.example1').wmuSlider();         
+   						</script> 	           	      
+             </div>
+             <div class="main">
+                <div class="wrap">
+             	  <div class="content-top">
+             		<div class="lsidebar span_1_of_c1">
+					  <p>Share</p>
+					</div>
+					<div class="cont span_2_of_c1">
+					  <div class="social">	
+					     <ul>	
+						  <li class="facebook"><a href="www.facebook.com"><span> </span></a><div class="radius"> <img src="images/radius.png"><a href="#"> </a></div><div class="border hide"><p class="num">1.51K</p></div></li>
+						 </ul>
+			   		   </div>
+					   <div class="social">	
+						   <ul>	
+							  <li class="twitter"><a href="www.tiwtter.com"><span> </span></a><div class="radius"> <img src="images/radius.png"></div><div class="border hide"><p class="num">1.51K</p></div></li>
+						  </ul>
+			     		</div>
+						 <div class="social">	
+						   <ul>	
+							  <li class="google"><a href="www.google.com"><span> </span></a><div class="radius"> <img src="images/radius.png"></div><div class="border hide"><p class="num">1.51K</p></div></li>
+						   </ul>
+			    		 </div>
+						 <div class="social">	
+						   <ul>	
+							  <li class="dot"><a href="#"><span> </span></a><div class="radius"> <img src="images/radius.png"></div><div class="border hide"><p class="num">1.51K</p></div></li>
+						  </ul>
+			     		</div>
+						<div class="clear"> </div>
+					  </div>
+					  <div class="clear"></div>			
+				   </div>
+				  <div class="content-bottom">
+				   <div class="box1">
+				    <div class="col_1_of_3 span_1_of_3"><a href="ShowItem">
+				     <div class="view view-fifth">
+				  	  <div class="top_box">
+					  	<h3 class="m_1">Product will be Displayed in Short distance</h3>
+					  	<p class="m_2">Item</p>
+				         <div class="grid_img">
+						   <div class="css3"><img src="images/pic.jpg" alt=""/></div>
+					          <div class="mask">
+	                       		<div class="info">Quick View</div>
+			                  </div>
+	                    </div>
+                       <div class="price">Rs300</div>
+					   </div>
+					    </div>
+					   <span class="rating">
+				        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input1">
+				        <label for="rating-input-1-5" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input2">
+				        <label for="rating-input-1-4" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input3">
+				        <label for="rating-input-1-3" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input4">
+				        <label for="rating-input-1-2" class="rating-star"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input5">
+				        <label for="rating-input-1-1" class="rating-star"></label>&nbsp;
+		        	  (45)
+		    	      </span>
+						 <ul class="list">
+						  <li>
+						  	<img src="images/plus.png" alt=""/>
+						  	<ul class="icon1 sub-icon1 profile_img">
+							  <li><a class="active-icon c1" href="Order">Order Now </a>
+								<ul class="sub-icon1 list">
+									<li><h3>sed diam nonummy</h3><a href=""></a></li>
+									<li><p>Product will be Displayed in Short distance, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+								</ul>
+							  </li>
+							 </ul>
+						   </li>
+					     </ul>
+			    	    <div class="clear"></div>
+			    	</a></div>
+				    <div class="col_1_of_3 span_1_of_3"><a href="ShowItem">
+				     <div class="view view-fifth">
+				  	  <div class="top_box">
+					  	<h3 class="m_1">Product will be Displayed in Short distance</h3>
+					  	<p class="m_2">Item</p>
+					    <div class="grid_img">
+						   <div class="css3"><img src="images/pic1.jpg" alt=""/></div>
+					          <div class="mask">
+	                       		<div class="info">Quick View</div>
+			                  </div>
+	                    </div>
+                       <div class="price">Rs400</div>
+					   </div>
+					    </div>
+					   <span class="rating">
+				        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+				        <label for="rating-input-1-5" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+				        <label for="rating-input-1-4" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+				        <label for="rating-input-1-3" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+				        <label for="rating-input-1-2" class="rating-star"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+				        <label for="rating-input-1-1" class="rating-star"></label>&nbsp;
+		        	  (45)
+		    	      </span>
+						 <ul class="list">
+						  <li>
+						  	<img src="images/plus.png" alt=""/>
+						  	<ul class="icon1 sub-icon1 profile_img">
+							  <li><a class="active-icon c1" href="Order">Order Now </a>
+								<ul class="sub-icon1 list">
+									<li><h3>sed diam nonummy</h3><a href=""></a></li>
+									<li><p>Product will be Displayed in Short distance, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+								</ul>
+							  </li>
+							 </ul>
+						   </li>
+					     </ul>
+			    	    <div class="clear"></div>
+			    	</a></div>
+				    <div class="col_1_of_3 span_1_of_3"><a href="ShowItem">
+				     <div class="view view-fifth">
+				  	  <div class="top_box">
+					  	<h3 class="m_1">Product will be Displayed in Short distance</h3>
+					  	<p class="m_2">Item</p>
+				         <div class="grid_img">
+						   <div class="css3"><img src="images/pic2.jpg" alt=""/></div>
+					          <div class="mask">
+	                       		<div class="info">Quick View</div>
+			                  </div>
+	                    </div>
+                       <div class="price">Rs400</div>
+					   </div>
+					    </div>
+					   <span class="rating">
+				        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+				        <label for="rating-input-1-5" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+				        <label for="rating-input-1-4" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+				        <label for="rating-input-1-3" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+				        <label for="rating-input-1-2" class="rating-star"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+				        <label for="rating-input-1-1" class="rating-star"></label>&nbsp;
+		        	  (45)
+		    	      </span>
+						 <ul class="list">
+						  <li>
+						  	<img src="images/plus.png" alt=""/>
+						  	<ul class="icon1 sub-icon1 profile_img">
+							  <li><a class="active-icon c1" href="Order">Order Now </a>
+								<ul class="sub-icon1 list">
+									<li><h3>sed diam nonummy</h3><a href=""></a></li>
+									<li><p>Product will be Displayed in Short distance, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+								</ul>
+							  </li>
+							 </ul>
+						   </li>
+					     </ul>
+			    	    <div class="clear"></div>
+			    	</a></div>
+				  <div class="clear"></div>
+			  </div>
+			  <div class="box1">
+				  <div class="col_1_of_3 span_1_of_3"><a href="ShowItem">
+				     <div class="view view-fifth">
+				  	  <div class="top_box">
+					  	<h3 class="m_1">Product will be Displayed in Short distance</h3>
+					  	<p class="m_2">Item</p>
+				         <div class="grid_img">
+						   <div class="css3"><img src="images/pic3.jpg" alt=""/></div>
+					          <div class="mask">
+	                       		<div class="info">Quick View</div>
+			                  </div>
+	                    </div>
+                       <div class="price">Rs800</div>
+					   </div>
+					    </div>
+					   <span class="rating">
+				        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+				        <label for="rating-input-1-5" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+				        <label for="rating-input-1-4" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+				        <label for="rating-input-1-3" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+				        <label for="rating-input-1-2" class="rating-star"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+				        <label for="rating-input-1-1" class="rating-star"></label>&nbsp;
+		        	  (45)
+		    	      </span>
+						 <ul class="list">
+						  <li>
+						  	<img src="images/plus.png" alt=""/>
+						  	<ul class="icon1 sub-icon1 profile_img">
+							  <li><a class="active-icon c1" href="Order">Order Now </a>
+								<ul class="sub-icon1 list">
+									<li><h3>sed diam nonummy</h3><a href=""></a></li>
+									<li><p>Product will be Displayed in Short distance, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+								</ul>
+							  </li>
+							 </ul>
+						   </li>
+					     </ul>
+			    	    <div class="clear"></div>
+			    	</a></div>
+				    <div class="col_1_of_3 span_1_of_3"><a href="ShowItem">
+				     <div class="view view-fifth">
+				  	  <div class="top_box">
+					  	<h3 class="m_1">Product will be Displayed in Short distance</h3>
+					  	<p class="m_2">Item</p>
+				         <div class="grid_img">
+						   <div class="css3"><img src="images/pic4.jpg" alt=""/></div>
+					          <div class="mask">
+	                       		<div class="info">Quick View</div>
+			                  </div>
+	                    </div>
+                       <div class="price">Rs200</div>
+					   </div>
+					    </div>
+					   <span class="rating">
+				        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+				        <label for="rating-input-1-5" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+				        <label for="rating-input-1-4" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+				        <label for="rating-input-1-3" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+				        <label for="rating-input-1-2" class="rating-star"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+				        <label for="rating-input-1-1" class="rating-star"></label>&nbsp;
+		        	  (45)
+		    	      </span>
+						 <ul class="list">
+						  <li>
+						  	<img src="images/plus.png" alt=""/>
+						  	<ul class="icon1 sub-icon1 profile_img">
+							  <li><a class="active-icon c1" href="Order">Order Now </a>
+								<ul class="sub-icon1 list">
+									<li><h3>sed diam nonummy</h3><a href=""></a></li>
+									<li><p>Product will be Displayed in Short distance, consectetuer  <a href="">adipiscing elit, sed diam</a></p></li>
+								</ul>
+							  </li>
+							 </ul>
+						   </li>
+					     </ul>
+			    	    <div class="clear"></div>
+			    	</a></div>
+				   <div class="col_1_of_3 span_1_of_3"><a href="ShowItem">
+				     <div class="view view-fifth">
+				  	  <div class="top_box">
+					  	<h3 class="m_1">Product will be Displayed in Short distance</h3>
+					  	<p class="m_2">Item</p>
+				         <div class="grid_img">
+						   <div class="css3"><img src="images/pic5.jpg" alt=""/></div>
+					          <div class="mask">
+	                       		<div class="info">Quick View</div>
+			                  </div>
+	                    </div>
+                       <div class="price">Rs800</div>
+					   </div>
+					    </div>
+					   <span class="rating">
+				        <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+				        <label for="rating-input-1-5" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+				        <label for="rating-input-1-4" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+				        <label for="rating-input-1-3" class="rating-star1"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+				        <label for="rating-input-1-2" class="rating-star"></label>
+				        <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+				        <label for="rating-input-1-1" class="rating-star"></label>&nbsp;
+		        	  (45)
+		    	      </span>
+						 <ul class="list">
+						  <li>
+						  	<img src="images/plus.png" alt=""/>
+						  	<ul class="icon1 sub-icon1 profile_img">
+							  <li><a class="active-icon c1" href="Order">Order Now </a>
+								<ul class="sub-icon1 list">
+									<li><h3>sed diam nonummy</h3><a href=""></a></li>
+									<li><p>Product will be Displayed in Short distance <a href="">adipiscing elit, sed diam</a></p></li>
+								</ul>
+							  </li>
+							 </ul>
+						   </li>
+					     </ul>
+			    	    <div class="clear"></div>
+			    	</a></div>
+				  <div class="clear"></div>
+			    </div>
+			  </div>
+			 </div>
+        </div>
+	
+		
+		<center>
+		<font size="4" color=blue>
+<a href="#" class="previous">&laquo; Previous</a>
+<a href="#" class="next">1</a>
+<a href="#" class="next">2</a>
+<a href="#" class="next">3</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">.</a>
+<a href="#" class="next">50</a>
+<a href="#" class="next">Next &raquo;</a>
+</font>
+</center>
+
+		
+		
+			
+
+        <div class="footer">
+       	  <div class="footer-top">
+       		<div class="wrap">
+       			  
+				   <div class="col_1_of_footer-top span_1_of_footer-top">
+				  	<ul class="f_list">
+				  	 
+					 
+					 	<li><img src="images/f_icon1.png" alt=""/><span class="delivery">Customer Service :<span class="orange">(+91) 7352286834 (freephone)</span></span></li>
+					 
+					 
+					 
+					 
+				  	 </ul>
+				   </div>
+				  
+				  <div class="clear"></div>
+			 </div>
+       	 </div>
+       	 <div class="footer-middle">
+       	 	<div class="wrap">
+       	 		<div class="section group">
+				<div class="col_1_of_middle span_1_of_middle">
+					<dl id="sample" class="dropdown">
+			        <dt><a href="#"><span>Please Select a States</span></a></dt>
+			        <dd>
+			            <ul>
+			                <li><a href="#">Andaman & Nicobar <span class="value">AN</span></a></li>
+			                <li><a href="#">Andhra Pradesh <span class="value">AP</span></a></li>
+			                <li><a href="#">Arunachal Pradesh <span class="value">AR</span></a></li>
+			                <li><a href="#">Assam <span class="value">AS</span></a></li>
+			                <li><a href="#">Bihar <span class="value">BH</span></a></li>
+			                <li><a href="#">Chandigarh <span class="value">CH</span></a></li>
+							 <li><a href="#">Chhatisgarh<span class="value">CG</span></a></li>
+			                <li><a href="#">Delhi <span class="value">DL</span></a></li>
+			                <li><a href="#">Goa <span class="value">GO</span></a></li>
+			                <li><a href="#">Gujarat <span class="value">GU</span></a></li>
+			                <li><a href="#">Haryana<span class="value">HR</span></a></li>
+			                <li><a href="#">Himachal Pradesh<span class="value">HP</span></a></li>
+							 <li><a href="#">Jammu & Kashmir <span class="value">JK</span></a></li>
+			                <li><a href="#">Jharkhand<span class="value">JH</span></a></li>
+			                <li><a href="#">Utter Pardesh<span class="value">UP</span></a></li>
+			                <li><a href="#">Karnataka <span class="value">KR</span></a></li>
+			                
+			                <li><a href="#">Madhya Pardesh<span class="value">MP</span></a></li> 
+							<li><a href="#">Chhatishgarh<span class="value">CH</span></a></li>
+			                <li><a href="#">Jharkhand<span class="value">JH</span></a></li>
+			                <li><a href="#">Utter Pardesh<span class="value">UP</span></a></li>
+			                <li><a href="#">Mharasta<span class="value">MH</span></a></li>
+			                <li><a href="#">West Bangal<span class="value">WB</span></a></li>
+			                <li><a href="#">Madhya Pardesh<span class="value">MP</span></a></li>
+							 <li><a href="#">Chhatishgarh<span class="value">CH</span></a></li>
+			                <li><a href="#">Jharkhand<span class="value">JH</span></a></li>
+			                <li><a href="#">Uttar Pardesh<span class="value">UP</span></a></li>
+			                <li><a href="#">Maharasta<span class="value">MH</span></a></li>
+			                <li><a href="#">West Bangal<span class="value">WB</span></a></li>
+			                <li><a href="#">Madhya Pardesh<span class="value">MP</span></a></li>
+			            </ul>
+			         </dd>
+   				    </dl>
+   				 </div>
+				<div class="col_1_of_middle span_1_of_middle">
+					<ul class="f_list1">
+						<li><span class="m_8">Search Item</span>
+						<div class="search">	  
+							<input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+							<input type="submit" value="Subscribe" id="submit" name="submit">
+							<div id="response"> </div>
+			 			</div><div class="clear"></div>
+			 		    </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			   </div>
+       	 	</div>
+       	 </div>
+       	 <div class="footer-bottom">
+       	 	<div class="wrap">
+       	 		<div class="section group">
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Books</h3>
+					<ul class="sub_list">
+						<h4 class="m_10">Engneering</h4>
+					    <li><a href="shop.html">Mechanical</a></li>
+			            <li><a href="shop.html">Civil</a></li>
+			            <li><a href="shop.html">Chemical</a></li>
+			           <li><a href="shop.html">Electronix</a></li>
+   					 <li><a href="shop.html">Computer Science</a></li>
+					 </ul>
+			             <ul class="sub_list">
+				            <h4 class="m_10">Medical</h4>
+				            <li><a href="shop.html">MBBS</a></li>
+				            <li><a href="shop.html">BDS</a></li>
+				            <li><a href="shop.html">B Pharma</a></li>
+				         </ul>
+				         <ul class="sub_list">
+				            <h4 class="m_10">Management</h4>
+				            <li><a href="shop.html">Human Resource </a></li>
+				            <li><a href="shop.html">Facility Managment</a></li>
+				            <li><a href="shop.html">Operation Manegement</a></li>
+							 <li><a href="shop.html">System Management</a></li>
+							  <li><a href="shop.html">Financial Management </a></li>
+				         </ul>
+				        <ul class="sub_list">
+				            <h4 class="m_10">Novels</h4>
+				            <li><a href="shop.html">Romance novel</a></li>
+				            <li><a href="shop.html">War novel</a></li>
+				            <li><a href="shop.html">Biographical novel</a></li>
+							 <li><a href="shop.html">Social novel</a></li>
+							  <li><a href="shop.html">Epistolary novel</a></li>
+				        </ul>
+				        
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Vehicles</h3>
+					<ul class="sub_list">
+					    <li><a href="shop.html">Cycle</a></li>
+			            <li><a href="shop.html">Bike</a></li>
+			            <li><a href="shop.html">Car</a></li>
+			  
+			         </ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Real States</h3>
+					<ul class="list1">
+					     <li><a href="shop.html">1 BHK Flat</a></li>
+			            <li><a href="shop.html">2 BHK Flat</a></li>
+			            <li><a href="shop.html">3 BHK Flat</a></li>
+			            <li><a href="shop.html">Single Room</a></li>
+			            <li><a href="shop.html">Double Room</a></li>
+			            <li><a href="shop.html">Family Room</a></li>
+			            <li><a href="shop.html">Campus</a></li>
+		            </ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Dress</h3>
+					<ul class="list1">
+					    
+					    <li><a href="shop.html">Swimwear</a></li>
+					   
+					    <li><a href="shop.html">Fitness Equipment</a></li>
+					    <li><a href="shop.html">Partywears</a></li>
+					   <li><a href="shop.html">Jewellery</a></li>
+					    <li><a href="shop.html">Sports Kits</a></li>
+		            </ul>
+				</div>
+				<div class="col_1_of_5 span_1_of_5">
+					<h3 class="m_9">Support</h3>
+					<ul class="list1">
+					   <li><a href="shop.html">Customer Service</a></li>
+					   <li><a href="shop.html">FAQ</a></li>
+					   <li><a href="shop.html">Online Rental Showrooms Contact</a></li>
+					   <li><a href="shop.html">about  Products</a></li>
+					   <li><a href="shop.html">Ordering </a></li>
+					   <li><a href="shop.html">Complains</a></li>
+					   <li><a href="shop.html">Using out Site</a></li>
+					   <li><a href="shop.html">Site Map</a></li>
+					   <li><a href="shop.html">Gift Card</a></li>
+					  
+		            </ul>
+		            <ul class="sub_list2">
+		               <h4 class="m_10">Company Info</h4>
+			           <li><a href="shop.html">About Us</a></li>
+			
+			        </ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+       	 	</div>
+       	 </div>
+       	 <div class="copy">
+       	   <div class="wrap">
+       	   	  <p>© All rights reserved | Aavartan 2K17 &nbsp;<a href="http://nitrr.com/"> NIT Raipur</a></p>
+       	   </div>
+       	 </div>
+       </div>
+       <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+        <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</body>
+</html>
